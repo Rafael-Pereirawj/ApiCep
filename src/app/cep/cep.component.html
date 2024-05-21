@@ -1,0 +1,37 @@
+<div class="container mt-4">
+<div class="row mb-3">
+  <label for="cep" class="col-sm-2 col-form-label">CEP:</label>
+  <div class="col-sm-10">
+    <input type="text" id="cep" class="form-control" (input)="onCepInput($event)" placeholder="Digite o CEP"/>
+  </div>
+</div>
+
+<div *ngIf="address" class="mt-3">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Informações do Endereço</h5>
+          <p class="card-text"><strong>CEP:</strong> {{ address.cep }}</p>
+          <p class="card-text"><strong>Logradouro:</strong> {{ address.logradouro }}</p>
+          <p class="card-text"><strong>Complemento:</strong> {{ address.complemento }}</p>
+          <p class="card-text"><strong>Bairro:</strong> {{ address.bairro }}</p>
+          <p class="card-text"><strong>Localidade:</strong> {{ address.localidade }}</p>
+          <p class="card-text"><strong>UF:</strong> {{ address.uf }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Outras Informações</h5>
+          <p class="card-text"><strong>IBGE:</strong> {{ address.ibge }}</p>
+          <p class="card-text"><strong>GIA:</strong> {{ address.gia }}</p>
+          <p class="card-text"><strong>DDD:</strong> {{ address.ddd }}</p>
+          <p class="card-text"><strong>SIAFI:</strong> {{ address.siafi }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

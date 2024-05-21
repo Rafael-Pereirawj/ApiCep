@@ -1,0 +1,31 @@
+<div class="container mt-4">
+<button (click)="showSobre()" class="btn btn-dark d-block mx-auto mb-4">Sobre</button>
+
+<div *ngIf="show" class="row">
+  <div class="col-md-3 col-12">
+    <div class="form-group">
+      <label for="turma">Turma:</label>
+      <input type="text" class="form-control" id="turma" [(ngModel)]="turma" readonly>
+    </div>
+    <div class="form-group">
+      <label for="turno">Turno:</label>
+      <input type="text" class="form-control" id="turno" [(ngModel)]="turno" readonly>
+    </div>
+    <div class="form-group">
+      <label for="unidade">Unidade:</label>
+      <input type="text" class="form-control" id="unidade" [(ngModel)]="unidade" readonly>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-12 text-center">
+    <img src="assets/img/pedro.jpg" class="img-fluid rounded-circle" style="max-width: 90px;" alt="Foto do aluno" />
+  </div>
+
+  <div class="col-md-6 col-12">
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text" class="form-control" id="nome" [(ngModel)]="nome" readonly>
+    </div>
+  </div>
+</div>
+</div>
