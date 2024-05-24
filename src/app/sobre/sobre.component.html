@@ -1,30 +1,20 @@
-<div class="container mt-4">
-<button (click)="showSobre()" class="btn btn-dark d-block mx-auto mb-4">Sobre</button>
-
-<div *ngIf="show" class="row">
-  <div class="col-md-3 col-12">
-    <div class="form-group">
-      <label for="turma">Turma:</label>
-      <input type="text" class="form-control" id="turma" [(ngModel)]="turma" readonly>
+<div class="container">
+  <button (click)="showSobre()" style="display: block; margin: 0 auto;" class="btn btn-dark">sobre</button><br>
+  <div *ngIf="show">  
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-6 order-1 order-lg-0">
+      <p>Turma: <span class="turma">ADS0304N</span></p>
+      <p>Turno: <span class="turno">Noite</span></p>
+      <p>Unidade: <span class="unidade">Bonsucesso</span></p>
     </div>
-    <div class="form-group">
-      <label for="turno">Turno:</label>
-      <input type="text" class="form-control" id="turno" [(ngModel)]="turno" readonly>
+    <div class="col-lg-1 col-md-1 col-2 col-6 order-2 order-lg-0">
+      <img src="assets/img/pedro.jpg" class="img-fixed-size" style="width: 90px;" alt="Foto do aluno" />
     </div>
-    <div class="form-group">
-      <label for="unidade">Unidade:</label>
-      <input type="text" class="form-control" id="unidade" [(ngModel)]="unidade" readonly>
-    </div>
-  </div>
-
-  <div class="col-md-3 col-12 text-center">
-    <img src="assets/img/pedro.jpg" class="img-fluid rounded-circle" style="max-width: 90px;" alt="Foto do aluno" />
-  </div>
-
-  <div class="col-md-6 col-12">
-    <div class="form-group">
-      <label for="nome">Nome:</label>
-      <input type="text" class="form-control" id="nome" [(ngModel)]="nome" readonly>
+    <div
+      class="col-lg-2 offset-lg-6 col-md-3 offset-md-4 col-4 offset-2 col-12 order-3 order-lg-0">
+      <p>
+        Nome: <span class="nome">Pedro Henrique do Nascimento Nunes</span>
+      </p>
     </div>
   </div>
 </div>

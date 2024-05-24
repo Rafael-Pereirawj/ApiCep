@@ -7,11 +7,11 @@ import { Observable } from 'rxjs';
 })
 export class ApiCepService {
 
-  private apiUrl = 'https://viacep.com.br/ws';
+  private apiUrl = 'https://viacep.com.br/ws/';
 
   constructor(private http: HttpClient) { }
 
   getCepInfo(cep: string): Observable<any> {
-    return this.http.get(`${this.apiUrl}/${cep}/json/`);
+    return this.http.get(`${this.apiUrl}${cep}/json/`);
   }
 }

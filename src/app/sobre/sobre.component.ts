@@ -12,8 +12,8 @@ import {FormsModule} from '@angular/forms';
 })
 export class SobreComponent {
   show:boolean=false;
-  showSobre(){
-    this.show=!this.show;
+  showSobre() {
+    this.show = !this.show;
   }
 
 
